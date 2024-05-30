@@ -13,16 +13,15 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
 `
-
 const Left = styled.div`
     flex:1;
     text-align: center;
+    align-items: center;
 `
 
 const Center = styled.div`
     flex:1;
     text-align: center;
-    align-items: center;
 `
 
 const Right = styled.div`
@@ -60,9 +59,9 @@ const Navbar = () => {
     <Container>
         <Wrapper>
             <Left>
-                <SearchContainer><SearchIcon style={{color: "gray", fontSize:16}}/><Input></Input></SearchContainer>
+                <Logo>QPICK</Logo>
             </Left>
-            <Center><Logo>STORE.</Logo></Center>
+            <Center><SearchContainer><SearchIcon style={{color: "gray", fontSize:16}}/><Input></Input></SearchContainer></Center>
             <Right>
                 <MenuItem>Регистрация</MenuItem>
                 <MenuItem>Войти</MenuItem>

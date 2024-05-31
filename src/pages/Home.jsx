@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Line from "../components/Line";
+// import Login from "../components/Login";
 
 const Home = () => {
   return (
     <div>
-        <Line/>
+        {/* <Login/> */}
         <Navbar/>
     </div>
   )

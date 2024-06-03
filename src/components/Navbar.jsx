@@ -1,24 +1,26 @@
-// import { BrowserRouter as Router, 
-//     Switch, 
-//     Route, 
-//     Link } from 'react-router-dom';
-import React from "react"
-import styled from "styled-components"
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import styled from "styled-components";
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import SearchIcon from '@mui/icons-material/Search';
 import { Badge } from '@mui/material';
-import { Home, ShoppingCartOutlined } from '@mui/icons-material';
-import Block from '../pictures/block.jpg'
+import { Home, ShoppingCartOutlined } from "@mui/icons-material";
+import Block from '../pictures/block.jpg';
+import Phone from '../pictures/phone.jpg';
+import Login from "../components/Login";
 
 const Container = styled.div`
     height: 60px;
+    padding: 10px 300px;
     background-color: #ffffff;
 `
+
 const Wrapper = styled.div`
-    padding: 10px 150px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
 `
+
 const Left = styled.div`
     flex:1;
     text-align: left;
@@ -70,13 +72,30 @@ const a = styled.div`
 `
 
 const Bblock = styled.div`
-    width: 1110px; 
+    width: 1100px;
+    min-height: 250px; 
     margin: auto;
+    background-image: url("src/pictures/block.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+`
+
+const Text1 = styled.div`
+    margin-left: 140px;
+    font-size: 35px;
+    color: whitesmoke;
+    text-align: center;
+`
+
+const Img1 = styled.div`
+    margin-top: 27px;
+    margin-left: 270px;
 `
 
 const Navbar = () => {
-  return (
-    // <Router>
+    return (
         <Container>
             <Wrapper>
                 <Left>
@@ -89,36 +108,18 @@ const Navbar = () => {
                 <Right>
                     <MenuItem>Регистрация</MenuItem>
                     <MenuItem>Войти</MenuItem>
-                    <MenuItem>
-                        <Badge badgeContent={4} color="primary">
-                            <ShoppingCartOutlined/>
-                        </Badge>
-                    </MenuItem>
+                    <MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem>
                     {/* <Link to="/registration"><MenuItem>Регистрация</MenuItem></Link>
                     <Link to="/login"><MenuItem>Войти</MenuItem></Link>
-                    <Link to="/cart"><MenuItem>
-                        <Badge badgeContent={4} color="primary">
-                            <ShoppingCartOutlined/>
-                        </Badge>
-                    </MenuItem></Link> */}
+                    <Link to="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></Link> */}
                 </Right>
             </Wrapper>
             <Bblock>
-                <img src={Block} alt=''/>
+                <Text1>Аксессуары для <br/>Iphone 13 Pro Max</Text1> 
+                <Img1><img src={Phone}/></Img1>
             </Bblock>
         </Container>
-        // {/* <Switch>
-        //     <Route path='/login'><Login /></Route>
-        //     <Route path='/registration'><Registration /></Route>
-        //     <Route path='/cart'><Cart /></Route>
-        // </Switch> */}
-        // <Switch>
-        // <Route path='/login' element={<Login/>}/>
-        // <Route path='/registration' element={<Registration/>}/>
-        // <Route path='/cart' element={<Cart/>}/>
-        // </Switch>
-    // </Router>
-  )
+    )
 }
 
 export default Navbar

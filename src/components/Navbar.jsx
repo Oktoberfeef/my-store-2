@@ -7,7 +7,21 @@ import { Badge } from '@mui/material';
 import { Home, ShoppingCartOutlined } from "@mui/icons-material";
 import Block from '../pictures/block.jpg';
 import Phone from '../pictures/phone.jpg';
+import case1 from '../pictures/case1.jpg';
+import case2 from '../pictures/case2.jpg';
+import case3 from '../pictures/case3.jpg';
+import pods1 from '../pictures/pods1.jpg';
+import pods2 from '../pictures/pods2.jpg';
+import pods3 from '../pictures/pods3.jpg';
+import pods4 from '../pictures/pods4.png';
+import pods5 from '../pictures/pods5.png';
+import pods6 from '../pictures/pods6.png';
+import holder1 from '../pictures/holder1.jpg';
+import holder2 from '../pictures/holder2.jpg';
+import holder3 from '../pictures/holder3.jpg';
+import lonio from '../pictures/lonio.jpg';
 import Login from "../components/Login";
+
 
 const Container = styled.div`
     height: 60px;
@@ -71,7 +85,7 @@ const a = styled.div`
     color: black;
 `
 
-const Bblock = styled.div`
+const Bblock1 = styled.div`
     width: 1100px;
     min-height: 250px; 
     margin: auto;
@@ -80,18 +94,303 @@ const Bblock = styled.div`
     background-size: 100% 100%;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
 `
 
 const Text1 = styled.div`
     margin-left: 140px;
     font-size: 35px;
-    color: whitesmoke;
+    color: #ffffff;
     text-align: center;
 `
 
 const Img1 = styled.div`
     margin-top: 27px;
     margin-left: 270px;
+`
+
+const Bblock2 = styled.div`
+`
+
+const Cont_img1 = styled.div`
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+`
+
+const Img2 = styled.div`
+    align-items: center;
+    margin-left: 140px;
+`
+
+const Img3 = styled.div`
+    align-items: center;
+    margin-left: 120px;
+`
+
+const Img4 = styled.div`
+    align-items: center;
+    margin-left: 140px;
+`
+
+const Cont_img2 = styled.div`
+    display: flex;
+    font-size: 18px;
+`
+
+const Text2 = styled.div`
+    margin-left: 255px;
+    font-weight: 600;
+    margin-bottom: 100px;
+`
+
+const Text3 = styled.div`
+    margin-left: 220px;
+    font-weight: 600;
+    margin-bottom: 100px;
+`
+
+const Text4 = styled.div`
+    margin-left: 247px;
+    font-weight: 600;
+    margin-bottom: 100px;
+`
+
+const Cases = styled.h2`
+    color: #838383;
+    margin-bottom: 40px;
+`
+
+
+const Block3 = styled.div`
+`
+
+const Cont_img3 = styled.div`
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+`
+
+const Img5 = styled.div`
+    align-items: center;
+    margin-left: 140px;
+`
+
+const Img6 = styled.div`
+    align-items: center;
+    margin-left: 120px;
+`
+
+const Img7 = styled.div`
+    align-items: center;
+    margin-left: 140px;
+`
+
+const Cont_img4 = styled.div`
+    display: flex;
+    font-size: 18px;
+`
+
+const Text5 = styled.div`
+    margin-left: 105px;
+    font-weight: 600;
+    margin-bottom: 125px;
+`
+
+const Star = styled.div`
+    color: gray;
+    margin-left: 35px;
+    font-weight: 600;
+    margin-top: 25px;
+`
+
+const Text6 = styled.div`
+    margin-left: 100px;
+    font-weight: 600;
+    margin-bottom: 125px;
+`
+
+const Star1 = styled.div`
+    color: gray;
+    margin-left: 35px;
+    font-weight: 600;
+    margin-top: 25px;
+`
+
+const Text7 = styled.div`
+    margin-left: 127px;
+    font-weight: 600;
+    margin-bottom: 125px;
+`
+
+const Star2 = styled.div`
+    color: gray;
+    margin-left: 35px;
+    font-weight: 600;
+    margin-top: 25px;
+`
+
+const Texxt = styled.div`
+    margin-left: 100px;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 125px;
+`
+
+const Texxt1 = styled.div`
+    margin-left: 100px;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 125px;
+`
+
+const Texxt2 = styled.div`
+    margin-left: 100px;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 125px;
+`
+
+const Pods = styled.h2`
+    color: #838383;
+    margin-bottom: 40px;
+`
+
+
+const Bbblock4 = styled.div`
+`
+
+const Cont_img5 = styled.div`
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+`
+
+const Img8 = styled.div`
+    align-items: center;
+    margin-left: 140px;
+`
+
+const Img9 = styled.div`
+    align-items: center;
+    margin-left: 120px;
+`
+
+const Img10 = styled.div`
+    align-items: center;
+    margin-left: 140px;
+`
+
+const Cont_img6 = styled.div`
+    display: flex;
+    font-size: 18px;
+`
+
+const Text8 = styled.div`
+margin-left: 105px;
+font-weight: 600;
+margin-bottom: 150px;
+`
+
+const Star3 = styled.div`
+    color: gray;
+    margin-left: 35px;
+    font-weight: 600;
+    margin-top: 25px;
+`
+
+const Text9 = styled.div`
+margin-left: 105px;
+font-weight: 600;
+margin-bottom: 150px;
+`
+
+const Text10 = styled.div`
+    margin-left: 105px;
+    font-weight: 600;
+    margin-bottom: 150px;
+`
+
+const Texxt3 = styled.div`
+    margin-left: 100px;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 150px;
+`
+
+const Texxt4 = styled.div`
+    margin-left: 100px;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 150px;
+`
+
+const Texxt5 = styled.div`
+    margin-left: 100px;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 150px;
+`
+
+const PodsDistant = styled.h2`
+    color: #838383;
+    margin-bottom: 40px;
+`
+
+const Holder = styled.h2`
+    color: #838383;
+    margin-bottom: 40px;
+`
+
+const Bbblock5 = styled.div`
+`
+
+const Img11 = styled.div`
+    margin-left: 1100px;
+`
+
+const Cont_img7 = styled.div`
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 30px;
+`
+
+const Img12 = styled.div`
+    align-items: center;
+    margin-left: 140px;
+`
+
+const Img13 = styled.div`
+    align-items: center;
+    margin-left: 80px;
+`
+
+const Img14 = styled.div`
+    align-items: center;
+    margin-left: 80px;
+`
+
+const Cont_img8 = styled.div`
+    display: flex;
+    font-size: 18px;
+`
+
+const Text11 = styled.h1`
+    font-weight: 600;
+    margin-left: 140px;
+`
+
+const Text12 = styled.h1`
+    flex: 2;
+    font-weight: 600;
+    margin-left: 500px;
+    color: #DF6464;
+`
+
+const Text13 = styled.h2`
+    font-weight: 600;
+    flex: 4;
+    color: #DF6464;
 `
 
 const Navbar = () => {
@@ -114,10 +413,69 @@ const Navbar = () => {
                     <Link to="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></Link> */}
                 </Right>
             </Wrapper>
-            <Bblock>
+            <Bblock1>
                 <Text1>Аксессуары для <br/>Iphone 13 Pro Max</Text1> 
                 <Img1><img src={Phone}/></Img1>
-            </Bblock>
+            </Bblock1>
+            <Cases>Чехлы</Cases>
+            <Bblock2>
+                <Cont_img1>
+                    <Img2><img src={case1}/></Img2>
+                    <Img3><img src={case2}/></Img3>
+                    <Img4><img src={case3}/></Img4>
+                </Cont_img1>
+                <Cont_img2>
+                    <Text2>Стеклянные</Text2>
+                    <Text3>Силиконовые</Text3>
+                    <Text4>Кожаные</Text4>
+                </Cont_img2>
+            </Bblock2>
+            <Pods>Наушники</Pods>
+            <Block3>
+                <Cont_img3>
+                    <Img5><img src={pods1}/></Img5>
+                    <Img6><img src={pods2}/></Img6>
+                    <Img7><img src={pods3}/></Img7>
+                </Cont_img3>
+                <Cont_img4>
+                    <Text5>Apple BYZ S852I <Star>★ 4.7</Star></Text5>
+                    <Texxt>707 ₽</Texxt>
+                    <Text6>Apple EarPods <Star1>★ 4.5</Star1></Text6>
+                    <Texxt1>466 ₽</Texxt1>
+                    <Text7>Apple EarPods <Star2>★ 4.5</Star2></Text7>
+                    <Texxt2>466 ₽</Texxt2>
+                </Cont_img4>
+            </Block3>
+            <PodsDistant>Наушники Беспроводные</PodsDistant>
+            <Bbblock4>
+                <Cont_img5>
+                    <Img8><img src={pods4}/></Img8>
+                    <Img9><img src={pods5}/></Img9>
+                    <Img10><img src={pods6}/></Img10>
+                </Cont_img5>
+                <Cont_img6>
+                    <Text8>Apple AirPods <Star3>★ 4.7</Star3></Text8>
+                    <Texxt3>1911 ₽</Texxt3>
+                    <Text9>GERLAX GH-04 <Star3>★ 4.7</Star3></Text9>
+                    <Texxt4>1309 ₽</Texxt4>
+                    <Text10>BOROFONE BO4 <Star3>★ 4.7</Star3></Text10>
+                    <Texxt5>1509 ₽</Texxt5>
+                </Cont_img6>
+            </Bbblock4>
+            <Holder>Автодержатель</Holder>
+            <Bbblock5>
+                <Img11><img src={lonio}/></Img11>
+                <Cont_img7>
+                    <Img12><img src={holder1}/></Img12>
+                    <Img13><img src={holder2}/></Img13>
+                    <Img14><img src={holder3}/></Img14>
+                </Cont_img7>
+                <Cont_img8>
+                    <Text11>BOROFONE BH32</Text11>
+                    <Text12>587 ₽</Text12>
+                    <Text13>-20%</Text13>
+                </Cont_img8>
+            </Bbblock5>
         </Container>
     )
 }

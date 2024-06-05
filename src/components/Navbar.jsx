@@ -4,7 +4,7 @@ import styled from "styled-components";
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import SearchIcon from '@mui/icons-material/Search';
 import { Badge } from '@mui/material';
-import { Home, ShoppingCartOutlined } from "@mui/icons-material";
+import { Home, ShoppingCartOutlined} from "@mui/icons-material";
 import Block from '../pictures/block.jpg';
 import Phone from '../pictures/phone.jpg';
 import case1 from '../pictures/case1.jpg';
@@ -20,8 +20,12 @@ import holder1 from '../pictures/holder1.jpg';
 import holder2 from '../pictures/holder2.jpg';
 import holder3 from '../pictures/holder3.jpg';
 import lonio from '../pictures/lonio.jpg';
+import Facebook from "../pictures/Facebook.jpg";
+import Telegram from "../pictures/telegram.jpg";
 import Login from "../components/Login";
 
+const div = styled.div`
+`
 
 const Container = styled.div`
     height: 60px;
@@ -72,6 +76,7 @@ const Logo = styled.h1`
     font-weight: bold;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 `
 
 const MenuItem = styled.div`
@@ -93,19 +98,19 @@ const Bblock1 = styled.div`
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
-    align-items: center;
     margin-bottom: 40px;
 `
 
 const Text1 = styled.div`
     margin-left: 140px;
+    margin-top: 70px;
     font-size: 35px;
     color: #ffffff;
     text-align: center;
 `
 
 const Img1 = styled.div`
-    margin-top: 27px;
+    margin-top: 45px;
     margin-left: 270px;
 `
 
@@ -160,7 +165,6 @@ const Cases = styled.h2`
     color: #838383;
     margin-bottom: 40px;
 `
-
 
 const Block3 = styled.div`
 `
@@ -257,7 +261,7 @@ const Pods = styled.h2`
 `
 
 
-const Bbblock4 = styled.div`
+const Bbloock4 = styled.div`
 `
 
 const Cont_img5 = styled.div`
@@ -342,7 +346,7 @@ const Holder = styled.h2`
     margin-bottom: 40px;
 `
 
-const Bbblock5 = styled.div`
+const Bblock5 = styled.div`
 `
 
 const Img11 = styled.div`
@@ -393,90 +397,187 @@ const Text13 = styled.h2`
     color: #DF6464;
 `
 
+const Container_2 = styled.div`
+    height: 230px;
+    background-color: black;
+    margin-top: 2500px;
+    color: white;
+`
+
+const CC = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+const Text14 = styled.h1`
+    font-weight: 600;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    cursor: pointer;
+`
+
+const Ul = styled.div`
+margin-left: 300px;
+list-style-type: none;
+`
+
+const Li_1 = styled.div`
+cursor: pointer;
+margin-top: 90px;
+margin-bottom: 20px;
+`
+
+const Li_2 = styled.div`
+cursor: pointer;
+margin-bottom: 20px;
+`
+
+const Li_3 = styled.div`
+cursor: pointer;
+`
+
+const Text15 = styled.div`
+margin-left: 200px;
+    font-weight: 600;
+    margin-top:40px;
+    cursor: pointer;
+`
+
+const Text16 = styled.div`
+margin-left: 20px;
+    font-weight: 600;
+    margin-top:40px;
+    cursor: pointer;
+`
+
+const Text17 = styled.div`
+margin-left: 20px;
+    font-weight: 600;
+    margin-top:40px;
+    cursor: pointer;
+`
+
+const Img15 = styled.div`
+margin-left: 130px;
+margin-bottom: 50px;
+cursor: pointer;
+`
+
+const Img16 = styled.div`
+margin-left: 20px;
+margin-bottom: 50px;
+cursor: pointer;
+`
+
+const End = styled.div`
+margin-top: 20px;
+margin-left: 1550px;
+cursor: pointer;
+`
+
 const Navbar = () => {
     return (
-        <Container>
-            <Wrapper>
-                <Left>
-                    <Logo><a href="http://localhost:5174/">QPICK</a></Logo>
-                </Left>
-                <Center>
-                    <SmartphoneIcon style={{padding: 5}}/>
-                    <SearchContainer><SearchIcon style={{color: "gray", fontSize:16}}/><Input placeholder = "Введите модель телефона"></Input></SearchContainer>
-                </Center>
-                <Right>
-                    <MenuItem>Регистрация</MenuItem>
-                    <MenuItem>Войти</MenuItem>
-                    <MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem>
-                    {/* <Link to="/registration"><MenuItem>Регистрация</MenuItem></Link>
-                    <Link to="/login"><MenuItem>Войти</MenuItem></Link>
-                    <Link to="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></Link> */}
-                </Right>
-            </Wrapper>
-            <Bblock1>
-                <Text1>Аксессуары для <br/>Iphone 13 Pro Max</Text1> 
-                <Img1><img src={Phone}/></Img1>
-            </Bblock1>
-            <Cases>Чехлы</Cases>
-            <Bblock2>
-                <Cont_img1>
-                    <Img2><img src={case1}/></Img2>
-                    <Img3><img src={case2}/></Img3>
-                    <Img4><img src={case3}/></Img4>
-                </Cont_img1>
-                <Cont_img2>
-                    <Text2>Стеклянные</Text2>
-                    <Text3>Силиконовые</Text3>
-                    <Text4>Кожаные</Text4>
-                </Cont_img2>
-            </Bblock2>
-            <Pods>Наушники</Pods>
-            <Block3>
-                <Cont_img3>
-                    <Img5><img src={pods1}/></Img5>
-                    <Img6><img src={pods2}/></Img6>
-                    <Img7><img src={pods3}/></Img7>
-                </Cont_img3>
-                <Cont_img4>
-                    <Text5>Apple BYZ S852I <Star>★ 4.7</Star></Text5>
-                    <Texxt>707 ₽</Texxt>
-                    <Text6>Apple EarPods <Star1>★ 4.5</Star1></Text6>
-                    <Texxt1>466 ₽</Texxt1>
-                    <Text7>Apple EarPods <Star2>★ 4.5</Star2></Text7>
-                    <Texxt2>466 ₽</Texxt2>
-                </Cont_img4>
-            </Block3>
-            <PodsDistant>Наушники Беспроводные</PodsDistant>
-            <Bbblock4>
-                <Cont_img5>
-                    <Img8><img src={pods4}/></Img8>
-                    <Img9><img src={pods5}/></Img9>
-                    <Img10><img src={pods6}/></Img10>
-                </Cont_img5>
-                <Cont_img6>
-                    <Text8>Apple AirPods <Star3>★ 4.7</Star3></Text8>
-                    <Texxt3>1911 ₽</Texxt3>
-                    <Text9>GERLAX GH-04 <Star3>★ 4.7</Star3></Text9>
-                    <Texxt4>1309 ₽</Texxt4>
-                    <Text10>BOROFONE BO4 <Star3>★ 4.7</Star3></Text10>
-                    <Texxt5>1509 ₽</Texxt5>
-                </Cont_img6>
-            </Bbblock4>
-            <Holder>Автодержатель</Holder>
-            <Bbblock5>
-                <Img11><img src={lonio}/></Img11>
-                <Cont_img7>
-                    <Img12><img src={holder1}/></Img12>
-                    <Img13><img src={holder2}/></Img13>
-                    <Img14><img src={holder3}/></Img14>
-                </Cont_img7>
-                <Cont_img8>
-                    <Text11>BOROFONE BH32</Text11>
-                    <Text12>587 ₽</Text12>
-                    <Text13>-20%</Text13>
-                </Cont_img8>
-            </Bbblock5>
-        </Container>
+        <p>
+            <Container>
+                <Wrapper>
+                    <Left>
+                        <Logo>QPICK</Logo>
+                    </Left>
+                    <Center>
+                        <SmartphoneIcon style={{padding: 5}}/>
+                        <SearchContainer><SearchIcon style={{color: "gray", fontSize:16}}/><Input placeholder = "Введите модель телефона"></Input></SearchContainer>
+                    </Center>
+                    <Right>
+                        <MenuItem>Регистрация</MenuItem>
+                        <MenuItem>Войти</MenuItem>
+                        <MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem>
+
+                        {/* <Link to="/registration"><MenuItem>Регистрация</MenuItem></Link>
+                        <Link to="/login"><MenuItem>Войти</MenuItem></Link>
+                        <Link to="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></Link> */}
+                    </Right>
+                </Wrapper>
+                <Bblock1>
+                    <Text1>Аксессуары для <br/>Iphone 13 Pro Max</Text1> 
+                    <Img1><img src={Phone}/></Img1>
+                </Bblock1>
+                <Cases>Чехлы</Cases>
+                <Bblock2>
+                    <Cont_img1>
+                        <Img2><img src={case1}/></Img2>
+                        <Img3><img src={case2}/></Img3>
+                        <Img4><img src={case3}/></Img4>
+                    </Cont_img1>
+                    <Cont_img2>
+                        <Text2>Стеклянные</Text2>
+                        <Text3>Силиконовые</Text3>
+                        <Text4>Кожаные</Text4>
+                    </Cont_img2>
+                </Bblock2>
+                <Pods>Наушники</Pods>
+                <Block3>
+                    <Cont_img3>
+                        <Img5><img src={pods1}/></Img5>
+                        <Img6><img src={pods2}/></Img6>
+                        <Img7><img src={pods3}/></Img7>
+                    </Cont_img3>
+                    <Cont_img4>
+                        <Text5>Apple BYZ S852I <Star>★ 4.7</Star></Text5>
+                        <Texxt>707 ₽</Texxt>
+                        <Text6>Apple EarPods <Star1>★ 4.5</Star1></Text6>
+                        <Texxt1>466 ₽</Texxt1>
+                        <Text7>Apple EarPods <Star2>★ 4.5</Star2></Text7>
+                        <Texxt2>466 ₽</Texxt2>
+                    </Cont_img4>
+                </Block3>
+                <PodsDistant>Наушники Беспроводные</PodsDistant>
+                <Bbloock4>
+                    <Cont_img5>
+                        <Img8><img src={pods4}/></Img8>
+                        <Img9><img src={pods5}/></Img9>
+                        <Img10><img src={pods6}/></Img10>
+                    </Cont_img5>
+                    <Cont_img6>
+                        <Text8>Apple AirPods <Star3>★ 4.7</Star3></Text8>
+                        <Texxt3>1911 ₽</Texxt3>
+                        <Text9>GERLAX GH-04 <Star3>★ 4.7</Star3></Text9>
+                        <Texxt4>1309 ₽</Texxt4>
+                        <Text10>BOROFONE BO4 <Star3>★ 4.7</Star3></Text10>
+                        <Texxt5>1509 ₽</Texxt5>
+                    </Cont_img6>
+                </Bbloock4>
+                <Holder>Автодержатель</Holder>
+                <Bblock5>
+                    <Img11><img src={lonio}/></Img11>
+                    <Cont_img7>
+                        <Img12><img src={holder1}/></Img12>
+                        <Img13><img src={holder2}/></Img13>
+                        <Img14><img src={holder3}/></Img14>
+                    </Cont_img7>
+                    <Cont_img8>
+                        <Text11>BOROFONE BH32</Text11>
+                        <Text12>587 ₽</Text12>
+                        <Text13>-20%</Text13>
+                    </Cont_img8>
+                </Bblock5>
+            </Container>
+            <Container_2>
+                <CC>
+                    <Text14>QPICK</Text14>
+                    <Ul>
+                        <Li_1><li>Избранное</li></Li_1>
+                        <Li_2><li>Корзина</li></Li_2>
+                        <Li_3><li>Контакты</li></Li_3>
+                    </Ul>
+                    <Text15>Каз</Text15>
+                    <Text16>Рус</Text16>
+                    <Text17>Eng</Text17>
+                    <Img15><img src={Facebook}/></Img15>
+                    <Img16><img src={Telegram}/></Img16>
+                </CC>
+                <End>Copyright © 2024. Все права защищены.</End>
+            </Container_2>
+        </p>
     )
 }
 
